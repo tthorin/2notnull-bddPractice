@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BddPracticeApp\BddPracticeApp.csproj" />
+    <ProjectReference Include="..\BddPracticeLib\BddPracticeLib.csproj" />
   </ItemGroup>
 
 </Project>
