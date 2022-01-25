@@ -12,7 +12,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BddPractice.Specs", "BddPra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddPractice.Tests", "BddPractice.Tests\BddPractice.Tests.csproj", "{4596B068-F39D-4FF5-9AFA-DD600EAD4C89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddPracticeApp", "BddPracticeApp\BddPracticeApp.csproj", "{94469DA2-404B-4472-AB05-57BCA3CA2E60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddPracticeLib", "BddPracticeLib\BddPracticeLib.csproj", "{8A6D0B22-6CEF-4DBD-BF9B-31602B8C53EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{4596B068-F39D-4FF5-9AFA-DD600EAD4C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4596B068-F39D-4FF5-9AFA-DD600EAD4C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4596B068-F39D-4FF5-9AFA-DD600EAD4C89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94469DA2-404B-4472-AB05-57BCA3CA2E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94469DA2-404B-4472-AB05-57BCA3CA2E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94469DA2-404B-4472-AB05-57BCA3CA2E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94469DA2-404B-4472-AB05-57BCA3CA2E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6D0B22-6CEF-4DBD-BF9B-31602B8C53EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6D0B22-6CEF-4DBD-BF9B-31602B8C53EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6D0B22-6CEF-4DBD-BF9B-31602B8C53EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6D0B22-6CEF-4DBD-BF9B-31602B8C53EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
