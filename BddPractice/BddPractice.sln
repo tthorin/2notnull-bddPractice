@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BddPractice.Specs", "BddPractice.Specs\BddPractice.Specs.csproj", "{E78E278B-5A05-44A7-A750-9739F0A85563}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddPractice.Tests", "BddPractice.Tests\BddPractice.Tests.csproj", "{4596B068-F39D-4FF5-9AFA-DD600EAD4C89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddPracticeLib.Tests", "BddPractice.Tests\BddPracticeLib.Tests.csproj", "{4596B068-F39D-4FF5-9AFA-DD600EAD4C89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddPracticeLib", "BddPracticeLib\BddPracticeLib.csproj", "{8A6D0B22-6CEF-4DBD-BF9B-31602B8C53EB}"
 EndProject
