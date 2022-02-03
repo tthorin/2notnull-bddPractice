@@ -2,12 +2,12 @@
 
 public static class XmasCountdown
 {
-    public static int DaysUntilXmas(DateTime from)
+    public static int DaysUntilXmas(DateTime from=default)
     {
+        if (from == default) from = DateTime.Now;
         var thisYear = DateTime.Now.Year;
         if (from.Year == thisYear && from.Month == 12 && from.Day > 24) thisYear++;
         var xmas = new DateTime(thisYear, 12, 24);
-        var daysTilXmas = xmas - from;
-        return daysTilXmas.Days;
+        return (xmas - from).Days;
     }
 }

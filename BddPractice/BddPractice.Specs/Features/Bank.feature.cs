@@ -85,15 +85,13 @@ namespace BddPractice.Specs.Features
         [Xunit.TraitAttribute("FeatureTitle", "Bank account transfers")]
         [Xunit.TraitAttribute("Description", "Bob craves pizza and wants to transfer money from his salary account to his card " +
             "account, pizza + soda costs 120 sek")]
-        [Xunit.TraitAttribute("Category", "tag1")]
         public virtual void BobCravesPizzaAndWantsToTransferMoneyFromHisSalaryAccountToHisCardAccountPizzaSodaCosts120Sek()
         {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bob craves pizza and wants to transfer money from his salary account to his card " +
                     "account, pizza + soda costs 120 sek", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -113,19 +111,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 6
  testRunner.Given("Salary account has 10532 sek", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 7
  testRunner.And("card account has 20 sek", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 9
- testRunner.When("He transfers money from salary acccount to card account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 8
+ testRunner.When("He transfers money from salary account to card account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
+#line 9
  testRunner.Then("card account should have 120 sek", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 11
+#line 10
  testRunner.And("salary account should have 10432 sek", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

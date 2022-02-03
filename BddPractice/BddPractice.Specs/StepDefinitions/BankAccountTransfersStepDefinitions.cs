@@ -17,13 +17,13 @@ namespace BddPractice.Specs.StepDefinitions
         }
 
         [Given(@"card account has (\d+) sek")]
-        public void GivenCardAccountHasSek(int amount)
+        public void GivenCardAccountHasDSek(int amount)
         {
             bob.Card.Deposit(amount);
         }
 
-        [When(@"He transfers money from salary acccount to card account")]
-        public void WhenHeTransfersMoneyFromSalaryAcccountToCardAccount()
+        [When(@"He transfers money from salary account to card account")]
+        public void WhenHeTransfersMoneyFromSalaryAccountToCardAccount()
         {
             bob.Salary.TransferToAnotherAccount(bob.Card, 100);
         }

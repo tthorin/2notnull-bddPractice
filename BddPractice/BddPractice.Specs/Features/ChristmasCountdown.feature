@@ -1,6 +1,6 @@
 ﻿Feature: Christmas Countdown
 
-Feature for counting down the days until next Xmas, using the XmasCountdown method
+Feature for counting down the days until next Xmas
 
 @tag1
 Scenario: Max is a christmas fanatic and longs for xmas and winter, he wants to know how many days there are from today til xmas (24 dec) 2022.

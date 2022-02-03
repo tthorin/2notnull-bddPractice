@@ -1,33 +1,31 @@
 using BddPracticeLib;
-using System;
-using TechTalk.SpecFlow;
 
 namespace BddPractice.Specs.StepDefinitions
 {
     [Binding]
     public class JunkFoodTrackerStepDefinitions
     {
-        private readonly JunkFoodTracker junkFood2021 = new();
-        DateTime date;
-        string response = "";
+        private readonly JunkFoodTracker _junkFood2021 = new();
+        private DateTime _date;
+        private string _response = "";
 
         [Given(@"the date is (\d{4})-(\d\d)-(\d\d)")]
         public void GivenTheDateIs(int year, int month, int day)
         {
-            date = new DateTime(year, month, day);
+            _date = new DateTime(year, month, day);
         }
 
-        [Given(@"He has bought (\d+) pizzas this month")]
+        [Given(@"He has bought (\d+) pizzas? this month")]
         public void GivenHeHasBoughtPizzasThisMonth(int pizza)
         {
             var pizzaBought = pizza > 0;
-            junkFood2021.RegisterJunkFoodBought(date, 0, pizzaBought);
+            _junkFood2021.RegisterJunkFoodBought(_date, 0, pizzaBought);
         }
         
         [Given(@"He has spent (\d+) kr on.*")]
         public void GivenHeSpentKrOnBurgersForHimselfAndHisFriendOnTheWayToTheParty(int earlierSpendings)
         {
-            junkFood2021.RegisterJunkFoodBought(date,earlierSpendings);
+            _junkFood2021.RegisterJunkFoodBought(_date,earlierSpendings);
         }
 
 
@@ -36,13 +34,13 @@ namespace BddPractice.Specs.StepDefinitions
         {
 
             var buyingPizza = pizzas > 0;
-            response = junkFood2021.RegisterJunkFoodBought(date, price, buyingPizza);
+            _response = _junkFood2021.RegisterJunkFoodBought(_date, price, buyingPizza);
         }
 
         [Then(@"the program responds with ""(.*)""")]
         public void ThenTheProgramRespondsWith(string expectedResponse)
         {
-            response.Should().Be(expectedResponse);
+            _response.Should()?.Be(expectedResponse);
         }
     }
 }

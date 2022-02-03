@@ -41,7 +41,7 @@ namespace BddPractice.Specs.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "JunkFoodTracker", "Simple function for tracking amount of junkfood bought and making sure the user d" +
-                    "oesnt buy for more than 500 sek and or buys pizza more then once a month", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "oesnt buy for more than 500 sek and or\r\n\tbuys pizza more then once a month", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -82,18 +82,16 @@ namespace BddPractice.Specs.Features
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="Johan would like to buy a pizza late in a month where he\'s been a good boy and ha" +
-            "ven\'t spent alot on junk food or bought any pizzas")]
+            "ven\'t spent alot on")]
         [Xunit.TraitAttribute("FeatureTitle", "JunkFoodTracker")]
         [Xunit.TraitAttribute("Description", "Johan would like to buy a pizza late in a month where he\'s been a good boy and ha" +
-            "ven\'t spent alot on junk food or bought any pizzas")]
-        [Xunit.TraitAttribute("Category", "tag1")]
-        public virtual void JohanWouldLikeToBuyAPizzaLateInAMonthWhereHesBeenAGoodBoyAndHaventSpentAlotOnJunkFoodOrBoughtAnyPizzas()
+            "ven\'t spent alot on")]
+        public virtual void JohanWouldLikeToBuyAPizzaLateInAMonthWhereHesBeenAGoodBoyAndHaventSpentAlotOn()
         {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Johan would like to buy a pizza late in a month where he\'s been a good boy and ha" +
-                    "ven\'t spent alot on junk food or bought any pizzas", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+                    "ven\'t spent alot on", "\tjunk food or bought any pizzas", tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -114,20 +112,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 9
  testRunner.Given("the date is 2021-08-27", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 10
  testRunner.And("He has bought 0 pizzas this month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 9
+#line 11
  testRunner.And("He has spent 55 kr on churros earlier in the month at the annual Food & Culture f" +
                         "air", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 12
  testRunner.When("he asks the program if he may buy junk food (1 pizza) for 120 kr today", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 11
+#line 13
  testRunner.Then("the program responds with \"OK. 325 kr left to spend this month.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -135,23 +133,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="In september, Johan goes to a party with some friends, on his way there he buys b" +
-            "urgers for himself and a friend, and the morning after he oddly enough wants to " +
-            "buy himself and his unnamed nightly pizza for breakfast so he checks his program" +
-            ".")]
+            "urgers for himself and a")]
         [Xunit.TraitAttribute("FeatureTitle", "JunkFoodTracker")]
         [Xunit.TraitAttribute("Description", "In september, Johan goes to a party with some friends, on his way there he buys b" +
-            "urgers for himself and a friend, and the morning after he oddly enough wants to " +
-            "buy himself and his unnamed nightly pizza for breakfast so he checks his program" +
-            ".")]
-        public virtual void InSeptemberJohanGoesToAPartyWithSomeFriendsOnHisWayThereHeBuysBurgersForHimselfAndAFriendAndTheMorningAfterHeOddlyEnoughWantsToBuyHimselfAndHisUnnamedNightlyPizzaForBreakfastSoHeChecksHisProgram_()
+            "urgers for himself and a")]
+        public virtual void InSeptemberJohanGoesToAPartyWithSomeFriendsOnHisWayThereHeBuysBurgersForHimselfAndA()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("In september, Johan goes to a party with some friends, on his way there he buys b" +
-                    "urgers for himself and a friend, and the morning after he oddly enough wants to " +
-                    "buy himself and his unnamed nightly pizza for breakfast so he checks his program" +
-                    ".", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 13
+                    "urgers for himself and a", "\tfriend, and the morning after he oddly enough wants to buy himself and his unnam" +
+                    "ed nightly pizza for breakfast so\r\n\the checks his program.", tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -171,20 +164,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 14
+#line 19
  testRunner.Given("the date is 2021-09-21", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 15
+#line 20
  testRunner.And("He has bought 0 pizzas this month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 16
+#line 21
  testRunner.And("He has spent 220 kr on burgers for himself and his friend on the way to the party" +
                         "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 17
+#line 22
  testRunner.When("he asks the program if he may buy junk food (2 pizzas) for 240 kr today", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 18
+#line 23
  testRunner.Then("the program responds with \"OK. 40 kr left to spend this month.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -192,70 +185,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="In october, Johan wants to buy a pizza but he has already bought a pizza ealier i" +
-            "n the month, against all hope, he still asks his program if he may buy a pizza")]
+            "n the month, against all")]
         [Xunit.TraitAttribute("FeatureTitle", "JunkFoodTracker")]
         [Xunit.TraitAttribute("Description", "In october, Johan wants to buy a pizza but he has already bought a pizza ealier i" +
-            "n the month, against all hope, he still asks his program if he may buy a pizza")]
-        public virtual void InOctoberJohanWantsToBuyAPizzaButHeHasAlreadyBoughtAPizzaEalierInTheMonthAgainstAllHopeHeStillAsksHisProgramIfHeMayBuyAPizza()
+            "n the month, against all")]
+        public virtual void InOctoberJohanWantsToBuyAPizzaButHeHasAlreadyBoughtAPizzaEalierInTheMonthAgainstAll()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("In october, Johan wants to buy a pizza but he has already bought a pizza ealier i" +
-                    "n the month, against all hope, he still asks his program if he may buy a pizza", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 20
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 21
- testRunner.Given("the date is 2021-10-12", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 22
- testRunner.And("He has bought 1 pizzas this month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 23
- testRunner.And("He has spent 120 kr on the pizza", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 24
- testRunner.When("he asks the program if he may buy junk food (1 pizza) for 120 kr today", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
+                    "n the month, against all", "\thope, he still asks his program if he may buy a pizza", tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 25
- testRunner.Then("the program responds with \"Denied. Already bought pizza this month.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="In november, Johan has been feeling tired and fallen back on his bad habits of ea" +
-            "ting too much junk food, at the end of the month, he really wants to buy some bu" +
-            "rgers but is not sure if he has enough money so he asks his program")]
-        [Xunit.TraitAttribute("FeatureTitle", "JunkFoodTracker")]
-        [Xunit.TraitAttribute("Description", "In november, Johan has been feeling tired and fallen back on his bad habits of ea" +
-            "ting too much junk food, at the end of the month, he really wants to buy some bu" +
-            "rgers but is not sure if he has enough money so he asks his program")]
-        public virtual void InNovemberJohanHasBeenFeelingTiredAndFallenBackOnHisBadHabitsOfEatingTooMuchJunkFoodAtTheEndOfTheMonthHeReallyWantsToBuySomeBurgersButIsNotSureIfHeHasEnoughMoneySoHeAsksHisProgram()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("In november, Johan has been feeling tired and fallen back on his bad habits of ea" +
-                    "ting too much junk food, at the end of the month, he really wants to buy some bu" +
-                    "rgers but is not sure if he has enough money so he asks his program", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 27
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -276,15 +216,66 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 28
- testRunner.Given("the date is 2021-11-28", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("the date is 2021-10-12", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 29
- testRunner.And("He has spent 450 kr on junk food earlier in the month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("He has bought 1 pizza this month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 30
- testRunner.When("he asks the program if he may buy junk food (0 pizza) for 100 kr today", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("He has spent 120 kr on the pizza", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 31
+ testRunner.When("he asks the program if he may buy junk food (1 pizza) for 120 kr today", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 32
+ testRunner.Then("the program responds with \"Denied. Already bought pizza this month.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="In november, Johan has been feeling tired and fallen back on his bad habits of ea" +
+            "ting too much junk food,")]
+        [Xunit.TraitAttribute("FeatureTitle", "JunkFoodTracker")]
+        [Xunit.TraitAttribute("Description", "In november, Johan has been feeling tired and fallen back on his bad habits of ea" +
+            "ting too much junk food,")]
+        public virtual void InNovemberJohanHasBeenFeelingTiredAndFallenBackOnHisBadHabitsOfEatingTooMuchJunkFood()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("In november, Johan has been feeling tired and fallen back on his bad habits of ea" +
+                    "ting too much junk food,", "\tat the end of the month, he really wants to buy some burgers but is not sure if " +
+                    "he has enough money so he asks\r\n\this program", tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 34
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 38
+ testRunner.Given("the date is 2021-11-28", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 39
+ testRunner.And("He has spent 450 kr on junk food earlier in the month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 40
+ testRunner.When("he asks the program if he may buy junk food (0 pizza) for 100 kr today", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 41
  testRunner.Then("the program responds with \"Denied. Not enough funds. (50 kr missing).\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
