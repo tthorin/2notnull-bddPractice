@@ -95,9 +95,9 @@ public class BankAccountTests
     [Fact]
     public void SaveFile_ShouldWork()
     {
-        var text = "silly string";
-        File.WriteAllText("./text.txt",text);
-        var loaded = File.ReadAllText("./text.txt");
-        Assert.Equal(text, loaded);
+        var textToSave = "silly string";
+        File.WriteAllText("./text.txt",textToSave);
+        var actual = File.ReadAllText("./text.txt");
+        Assert.Equal(textToSave, actual);
     }
 }
